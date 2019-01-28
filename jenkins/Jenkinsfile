@@ -11,7 +11,7 @@ pipeline {
 				sh 'rm -r src/build/*'
 				sh 'cd src/build && cmake .. '
 				sh 'cd src/build && make'
-				sh './tutorial'
+				sh './src/build/tutorial'
             }
         }
     }
