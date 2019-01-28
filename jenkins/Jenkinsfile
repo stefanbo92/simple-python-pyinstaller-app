@@ -11,6 +11,7 @@ pipeline {
 				sh 'mkdir src/build'
 				sh 'cd src/build && cmake .. '
 				sh 'cd src/build && make'
+				sh './tutorial'
             }
         }
     }
