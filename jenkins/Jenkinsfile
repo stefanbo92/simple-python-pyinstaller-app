@@ -8,8 +8,9 @@ pipeline {
                 }
             }
             steps {
-				sh 'cmake .. '
-				sh 'make'
+				sh 'mkdir src/build'
+				sh 'cd src/build && cmake .. '
+				sh 'cd src/build && make'
             }
         }
     }
