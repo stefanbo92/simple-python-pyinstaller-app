@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             agent {
                 docker {
-                    image 'rikorose/gcc-cmake bash'
+                    image 'rikorose/gcc-cmake'
                 }
             }
             steps {
